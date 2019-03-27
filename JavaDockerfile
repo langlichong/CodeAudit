@@ -1,0 +1,6 @@
+FROM java:8
+MAINTAINER LangLiChong
+WORKDIR /usr/src/aj
+COPY ./sca01.jar   /usr/src/aj
+EXPOSE 8080
+CMD ["java","-jar","sca01.jar"]
